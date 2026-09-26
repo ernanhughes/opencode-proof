@@ -1,0 +1,42 @@
+{
+  "name": "opencode-proof",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that assembles claims, obligations, evidence and verification receipts into inspectable, replayable ProofArtifacts. Assembles arguments; generates no conclusions. Zero model inference.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "proof.example.json",
+    "README.md",
+    "DESIGN.md",
+    "AGENTS.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun build ./index.ts --outdir ./dist --target node --format esm --packages external",
+    "prepack": "bun run build",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "check": "bun run typecheck && bun test",
+    "health": "bun src/dev-cli.ts health",
+    "smoke": "bun src/dev-cli.ts smoke",
+    "load-check": "bun src/dev-cli.ts load"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.0.12"
+  },
+  "devDependencies": {
+    "@tsconfig/bun": "^1.0.10",
+    "@types/bun": "^1.3.3",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "bun": ">=1.0.0",
+    "node": ">=22.0.0"
+  },
+  "license": "Apache-2.0"
+}

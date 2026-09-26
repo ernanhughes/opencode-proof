@@ -141,3 +141,7 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# opencode-proof local stores (artifacts must not become committed source)
+.proof/
+.opencode-proof/

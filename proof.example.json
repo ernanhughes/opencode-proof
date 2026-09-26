@@ -1,0 +1,54 @@
+{
+  "assembled_at": "2026-09-27T00:00:00.000Z",
+  "claim": {
+    "claim_id": "cl_45de76241e809219d83d5b1a2dc1f8b7",
+    "statement": "test command exited successfully",
+    "subject": "test-suite"
+  },
+  "content_hash": "fc4fb43fec41cc156fe22fbea5fa8ae402b6a685d8d97f7a6dcab754c24a69c4",
+  "evidence": [
+    {
+      "content_hash": "e2da7b2f71a12f38894de2350ab5373a0b39d8f79f8803784b35af2ed7965dc5",
+      "evidence_id": "ev_e2da7b2f71a12f38894de2350ab5373a"
+    }
+  ],
+  "obligations": [
+    {
+      "claim_id": "cl_45de76241e809219d83d5b1a2dc1f8b7",
+      "criterion": {
+        "evidence_kind": "command_result",
+        "expected": 0,
+        "kind": "evidence_field",
+        "operator": "EQUALS",
+        "path": "observation.exit_code"
+      },
+      "description": "test command exit_code equals 0",
+      "evidence_ids": [
+        "ev_e2da7b2f71a12f38894de2350ab5373a"
+      ],
+      "obligation_id": "ob_72c4583b160eef136fddc7e0c7f036e0",
+      "required": true,
+      "verification_id": "vr_bf0cbcf250f3dd2d9317e951ab96ef50"
+    }
+  ],
+  "producer": {
+    "plugin": "opencode-proof",
+    "version": "0.1.0"
+  },
+  "proof_class": "EMPIRICAL",
+  "proof_id": "pf_8516cf6df389d7754412a0900050e71cf758866feaf62872928e789f19c71d44",
+  "schema": "opencode.proof.v1",
+  "status": "COMPLETE",
+  "summary": {
+    "required": 1,
+    "satisfied": 1,
+    "unresolved": 0,
+    "violated": 0
+  },
+  "verifications": [
+    {
+      "content_hash": "33e8e070012e814ca916badcd839b35437c3c5609b3eed91a01fca5ef00f835f",
+      "verification_id": "vr_bf0cbcf250f3dd2d9317e951ab96ef50"
+    }
+  ]
+}

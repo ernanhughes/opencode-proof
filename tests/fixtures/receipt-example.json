@@ -1,0 +1,54 @@
+{
+  "claim": {
+    "claim_id": "cl_45de76241e809219d83d5b1a2dc1f8b7",
+    "statement": "test command exited successfully",
+    "subject": "test-suite"
+  },
+  "content_hash": "33e8e070012e814ca916badcd839b35437c3c5609b3eed91a01fca5ef00f835f",
+  "criterion": {
+    "evidence_kind": "command_result",
+    "expected": 0,
+    "kind": "evidence_field",
+    "operator": "EQUALS",
+    "path": "observation.exit_code"
+  },
+  "evaluated_at": "2026-09-26T00:00:00.000Z",
+  "evaluation": {
+    "details": {
+      "evidence_ids": [
+        "ev_e2da7b2f71a12f38894de2350ab5373a"
+      ],
+      "expected": 0,
+      "kind": "evidence_field",
+      "operator": "EQUALS",
+      "path": "observation.exit_code",
+      "per_record": [
+        {
+          "actual": 0,
+          "evidence_id": "ev_e2da7b2f71a12f38894de2350ab5373a",
+          "observed_at": "2026-09-26T00:00:00.000Z",
+          "present": true,
+          "reason_code": "EVIDENCE_VALUE_MATCH",
+          "result": "TRUE"
+        }
+      ],
+      "reason_code": "EVIDENCE_VALUE_MATCH",
+      "result": "TRUE"
+    },
+    "reason_code": "CRITERION_SATISFIED",
+    "result": "TRUE"
+  },
+  "evidence_hashes": {
+    "ev_e2da7b2f71a12f38894de2350ab5373a": "e2da7b2f71a12f38894de2350ab5373a0b39d8f79f8803784b35af2ed7965dc5"
+  },
+  "evidence_ids": [
+    "ev_e2da7b2f71a12f38894de2350ab5373a"
+  ],
+  "schema": "opencode.verification.v1",
+  "verdict": "PASS",
+  "verification_id": "vr_bf0cbcf250f3dd2d9317e951ab96ef50",
+  "verifier": {
+    "plugin": "opencode-verify",
+    "version": "0.1.0"
+  }
+}
