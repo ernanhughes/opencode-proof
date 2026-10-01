@@ -14,6 +14,7 @@ import { SUPPORTED_VERIFICATION_SCHEMAS } from "./version";
 
 // ---- Claim (mirrors upstream normalizeClaim) ----
 
+// Keep proof-side claim validation aligned with opencode-verify and Worker.
 export const MAX_CLAIM_STATEMENT_CHARS = 4096;
 export const MAX_CLAIM_SCOPE_BYTES = 16_384;
 export const CLAIM_ID_PATTERN = /^cl_[0-9a-f]{32}$/;
